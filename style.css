@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+header {
+    padding: 10px 0;
+}
+
+h1 {
+    border-bottom: 4px solid rgb(255, 138, 138);
+}
+
+main {
+    max-width: 800px;
+    height: 100%;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+h2 {
+    font-size: 28px;
+    color: rgb(255, 138, 138);
+    color: rgb(255, 255, 255);
+}
+
+#newSantaWrapper {
+    display: flex;
+    margin: 20px 0;
+}
+
+input {
+    padding: 7px;
+    border: 4px solid rgb(255, 138, 138);
+    border-right: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+#next, #newSantaAdd {
+    padding: 7px 20px;
+    border: 4px solid rgb(255, 138, 138);
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+#next:hover, #newSantaAdd:hover {
+    background-color: rgb(255, 138, 138);;
+}
+
+#next {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#santasList {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.santa-unit {
+    display: flex;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.santa-unit button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.santa-unit button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(20, 20, 20);
+}
+
+.santa-unit p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
